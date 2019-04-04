@@ -19,7 +19,7 @@ chown -R vagrant:vagrant /home/orga_2019a_loyarte
 # ln -s "/home/vagrant/.oh-my-zsh/custom/themes/spaceship-prompt/spaceship.zsh-theme" "/home/vagrant/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
 # sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="spaceship"/g' /home/vagrant/.zshrc
 
-
 apt-get update
 apt-get install -y gcc
+apt-get install -y make
 apt-get install -y gcc-multilib libc6-dev
