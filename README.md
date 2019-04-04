@@ -14,11 +14,11 @@ La ruta (dentro de la virtual) ` /home/orga_2019a_<apellido>` es una carpeta com
 
 - Clonar el repo en la misma carpeta que el repo de la materia.
 
-      git clone ...
+      git clone https://github.com/iloyarte/orga-computador-vagrant-mac.git
 
 - Entrar a la carpeta de la máquina virtualbox
 
-      cd orga-vagrant
+      cd orga-computador-vagrant-mac
 
 - Reemplazar en el `Vagrantfile` y el `provision.sh` los nombres de las carpetas con las del repo de la materia.
 
