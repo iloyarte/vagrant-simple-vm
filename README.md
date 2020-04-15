@@ -3,7 +3,19 @@
 ### Descripción
 Simple máquina virtual de Ubuntu hecha en vagrant. Contiene las cosas necesarias para compilar el tp 1: datalab.
 
-La ruta (dentro de la virtual) ` /home/orga_2019a_<apellido>` es una carpeta compartida apuntada a la carpeta local del repo.
+La ruta (dentro de la virtual) ` /home/vagrant/shared` es una carpeta compartida apuntada a la carpeta local del repo.
+
+### Instalaciones:
+Esta máquina virtual cuenta con los siguientes paquetes preinstalados:
+- gcc
+- make
+- gcc-multilib
+- libc6-dev
+- xfce4
+- virtualbox-guest-dkms 
+- virtualbox-guest-utils 
+- virtualbox-guest-x11
+- VBoxClient-all
 
 ### Instalación
 
@@ -12,13 +24,11 @@ La ruta (dentro de la virtual) ` /home/orga_2019a_<apellido>` es una carpeta com
     Vagrant: vagrantup.com
     Virtualbox:
 
-- Clonar el repo en la misma carpeta que el repo de la materia.
-
-      git clone https://github.com/iloyarte/orga-computador-vagrant-mac.git
+- Clonar el repo.
 
 - Entrar a la carpeta de la máquina virtualbox
 
-      cd orga-computador-vagrant-mac
+      cd Vagrant-Oz-VM
 
 - Reemplazar en el `Vagrantfile` y el `provision.sh` los nombres de las carpetas con las del repo de la materia.
 
@@ -26,15 +36,8 @@ La ruta (dentro de la virtual) ` /home/orga_2019a_<apellido>` es una carpeta com
 
       vagrant up
 
-- Conectarse a la máquina virtualbox
 
-      vagrant ssh
+Una vez hecho esto, la máquina está lista para usarse. Para abrirla, iniciar virtualbox y prender la virtual.
 
 
-Una vez hecho esto, la máquina está lista para usarse. Para compilar el tp hacer:
 
-```
-vagrant ssh
-cd /home/orga_2019a_<appellido>
-make test
-```
