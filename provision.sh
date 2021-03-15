@@ -4,8 +4,8 @@
 # Provisioning file for Lucchese dev environment
 #
 
-# Reemplazar con la carpeta del repo de la materia
-chown -R vagrant:vagrant /home/orga_2019a_loyarte
+# Reemplazar con la carpeta utilizada como destino en la Vagrantfile
+chown -R vagrant:vagrant /home/orga/datalab
 
 
 ## ZSH - Esto está desactivado por un bug en el prompt pero la mayor parte del tiempo funciona, solo hay que descomentar el bloque.
